@@ -82,8 +82,6 @@ func TestFixBirdCount(t *testing.T) {
 			name:       "returns a bird count list with the corrected values",
 			birdCounts: []int{3, 0, 5, 1, 0, 4, 1, 0, 3, 4, 3, 0},
 			want:       []int{4, 0, 6, 1, 1, 4, 2, 0, 4, 4, 4, 0},
-			// [3 0 5 1 0 4 1 0 3 4 3 0]
-			// [4 1 5 3 0 5 1 0 3 4 3 0]
 		},
 		{
 			name:       "works for a short bird count list",
