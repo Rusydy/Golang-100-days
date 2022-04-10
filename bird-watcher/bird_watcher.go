@@ -4,7 +4,7 @@ package birdwatcher
 // the individual day's counts.
 func TotalBirdCount(birdsPerDay []int) int {
 	res := 0
-	for i := 0; i < len(birdsPerDay); i++ {
+	for i := range birdsPerDay {
 		res += birdsPerDay[i]
 	}
 	return res
